@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+header .container {
+    display: flex;
+}
+.logo img { 
+    width: 100px;
+    height: 100px;
+}

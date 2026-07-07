@@ -1,6 +1,6 @@
-# Snap
+# SnapSuite
 
-**Snap** is the official website and home of the **Snap** application ecosystem.
+**SnapSuite** is the official website and home of the **Snap** application ecosystem.
 
 The project serves as a central hub where you can:
 
@@ -22,11 +22,18 @@ Available platforms:
 * Linux
 * Android
 * Web *(coming soon)*
+* macOS *(planned)*
 * iOS *(planned)*
 
 ### SnapRename
 
 A simple utility for batch renaming photos quickly and consistently.
+
+Available platforms:
+
+* Windows
+* Linux
+* Android *(planned)*
 
 ## Roadmap
 
