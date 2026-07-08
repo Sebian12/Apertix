@@ -100,6 +100,8 @@ header .container {
     justify-content: flex-end;
     align-items: flex-end;
     max-width: 650px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .hero-image img {
@@ -150,9 +152,9 @@ header .container {
 }
 
 .hero .version {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
-    padding-top: 0.2rem;
+    padding-top: 0.3rem;
 }
 
 /* ===========================
@@ -175,7 +177,7 @@ header .container {
 }
 
 .button + .button {
-    margin-left: 1rem;
+    margin-left: 1.2rem;
 }
 
 /* Primary */
