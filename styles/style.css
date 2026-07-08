@@ -21,6 +21,7 @@ a {
 
 ul {
     list-style: none;
+    font-size: 18px;
 }
 
 /* ===========================
@@ -48,11 +49,11 @@ header .container {
     justify-content: space-between;
     align-items: center;
 
-    height: 125px;
+    height: 130px;
 }
 
 .logo img {
-    height: 125px;
+    height: 140px;
     width: auto;
 }
 
