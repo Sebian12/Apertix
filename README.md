@@ -10,30 +10,14 @@ The project serves as a central hub where you can:
 * 📖 Learn about each project
 * 🚀 Follow development progress
 
-## Applications
+## SnapSuite ecosystem
 
-### SnapPress
-
-Compress JPEG and PNG images with minimal quality loss.
-
-Available platforms:
-
-* Windows
-* Linux
-* Android
-* Web *(coming soon)*
-* macOS *(planned)*
-* iOS *(planned)*
-
-### SnapRename
-
-A simple utility for batch renaming photos quickly and consistently.
-
-Available platforms:
-
-* Windows
-* Linux
-* Android *(planned)*
+| App | Platform | Language |
+|-----|----------|----------|
+| [SnapPress](https://github.com/Sebian12/SnapPress) | Windows / Linux / Web | Python / JavaScript |
+| [SnapPress Android](https://github.com/Sebian12/SnapPress-Android) | Android | Kotlin |
+| SnapRename | Windows | C# |
+| SnapRename Android | Android | Kotlin |
 
 ## Roadmap
 
