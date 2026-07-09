@@ -26,6 +26,7 @@ The project serves as a central hub where you can:
 * [ ] Application pages
 * [ ] Download center
 * [ ] SnapPress Web
+* [ ] SnapRename Web
 * [ ] Multi-language support
 
 ## Technologies
