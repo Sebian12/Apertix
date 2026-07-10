@@ -1,6 +1,6 @@
-# SnapSuite
+# Apertix
 
-**SnapSuite** is the official website and home of the **Snap** application ecosystem.
+**Apertix** is the official website and home of the **Snap** application ecosystem.
 
 The project serves as a central hub where you can:
 
@@ -10,7 +10,7 @@ The project serves as a central hub where you can:
 * 📖 Learn about each project
 * 🚀 Follow development progress
 
-## SnapSuite ecosystem
+## Apertix ecosystem
 
 | App | Platform | Language |
 |-----|----------|----------|
@@ -27,7 +27,6 @@ The project serves as a central hub where you can:
 * [ ] Download center
 * [ ] SnapPress Web
 * [ ] SnapRename Web
-* [ ] Multi-language support
 
 ## Technologies
 
