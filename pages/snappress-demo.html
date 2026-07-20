@@ -6,21 +6,21 @@
     <title>SnapPress Demo</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://sebian12.github.io/Apertix/styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="https://sebian12.github.io/Apertix/assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href="https://sebian12.github.io/Apertix/index.html">
-                    <img src="https://sebian12.github.io/Apertix/assets/logo.png" alt="Apertix Logo">
+                <a href="../index.html">
+                    <img src="../assets/logo.png" alt="Apertix Logo">
                 </a>
             </div>
             <nav class="navigation-bar">
@@ -30,10 +30,26 @@
                     <li><a href="download.html">Downloads</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
-                    <li class="testingBtn"><a href="/index.html">a</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <div id="dropzone">
+                <label for="fileInput">
+                    Click to select files
+                    <input type="file" id="fileInput" multiple accept="image/*" hidden>
+                </label>
+            </div>
+            <p id="counter">0 / 10 files</p>
+            <div id="results"></div>
+            <button class="button primary" id="downloadBtn">Download all</button>
+        </div>
+    </main>
+    <footer class="demo-footer">
+        <p class="version">Current Version: v1.0.0</p>
+    </footer>
+    <script src="../src/SnapPress_demo.js"></script>
 </body>
 </html>
