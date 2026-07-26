@@ -49,7 +49,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
 
-    height: 130px;
+    height: 100px;
 }
 
 .logo img {
@@ -442,4 +442,50 @@ header .container {
 
 .demo-footer {
     text-align: center;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    background: #0B0D12;
+    border-top: 1px solid #252A36;
+    margin-top: 100px;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #252A36;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #6B7280;
+    font-size: 14px;
 }
