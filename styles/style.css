@@ -169,6 +169,11 @@ header .container {
     align-items: flex-start;
 }
 
+button.button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
 .buttons .button + .button {
     margin-left: 0;
 }
@@ -488,4 +493,67 @@ footer {
 .footer-bottom p {
     color: #6B7280;
     font-size: 14px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.65);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 420px;
+    max-width: 90%;
+
+    background: #181C24;
+    border: 1px solid #2A2F3A;
+    border-radius: 16px;
+
+    padding: 32px;
+
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 16px;
+}
+
+.modal-content p {
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+.modal-buttons {
+    margin-top: 28px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+
+    background: none;
+    border: none;
+
+    color: #9CA3AF;
+    font-size: 28px;
+    line-height: 1;
+
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.modal-close:hover {
+    color: white;
 }

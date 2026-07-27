@@ -44,7 +44,7 @@
                     <p>Compress images without sacrificing quality.</p>
                     <p>Fast, lightweight and available on desktop, mobile and web.</p>
                     <a class="button primary" href="pages/snappress.html">Learn more</a>
-                    <a class="button secondary" href="https://github.com/Sebian12/SnapPress/releases/download/v1.11.1/SnapPress.exe">Download</a>
+                    <a class="button secondary" id="download-btn" href="#">Download</a>
                     <p class="version">Current version: v1.11.1</p>
                 </div>
 
@@ -97,5 +97,25 @@
 
         </div>
     </footer>
+
+    <div id="download-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">&times;</button>
+            <h2>Support Apertix</h2>
+            <p>SnapPress is completely free and open source.</p>
+            <p>If it has been useful to you, consider supporting future development.</p>
+
+            <div class="modal-buttons">
+                <a href="https://ko-fi.com/TWOJ_LINK" target="_blank" class="button primary">
+                    Support development
+                </a>
+
+                <button id="continue-download" class="button secondary">
+                    Continue to download
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="src/main.js"></script>
 </body>
 </html>
