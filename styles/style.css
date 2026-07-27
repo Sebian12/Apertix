@@ -212,6 +212,7 @@ button.button {
 /* Secondary */
 
 .button.secondary {
+    background-color: #181C24;
     border: 1px solid #3A4252;
     color: #FFFFFF;
 }
