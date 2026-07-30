@@ -558,3 +558,56 @@ footer {
 .modal-close:hover {
     color: white;
 }
+
+/* FAQ */
+.faq {
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+.faq-section {
+    background: #181C24;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.faq-section summary {
+    padding: 20px 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-section summary::after {
+    content: "+";
+    float: right;
+    transition: transform .25s;
+}
+
+.faq-section[open] summary::after {
+    content: "−";
+}
+
+.faq-content {
+    padding: 0 25px 25px;
+}
+
+.faq-content h3 {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.faq-content p {
+    color: #bfc5d2;
+    line-height: 1.7;
+    margin: 0;
+}
