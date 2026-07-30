@@ -6,7 +6,7 @@ const continueBtn = document.getElementById("continue-download");
 const closeBtn = document.getElementById("close-modal");
 
 const downloadLink =
-    "https://github.com/Sebian12/SnapPress/releases/download/v1.11.1/SnapPress.exe";
+    "https://github.com/Sebian12/SnapPress/releases/download/v1.12.1/SnapPress.exe";
 
 // Open the support modal instead of downloading immediately
 downloadBtn.addEventListener("click", function (e) {
