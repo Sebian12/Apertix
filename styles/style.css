@@ -611,3 +611,334 @@ footer {
     line-height: 1.7;
     margin: 0;
 }
+
+/* ===========================
+   Downloads Page
+=========================== */
+
+.download-hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.download-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.download-hero p {
+    font-size: 1.3rem;
+    color: #B8C0CC;
+}
+
+/* ===========================
+   Download Apps Section
+=========================== */
+
+.download-apps {
+    padding: 80px 0;
+}
+
+.download-apps h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.download-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.download-card {
+    background-color: #181C24;
+    border: 1px solid #2A3443;
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: all .25s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-8px);
+    border-color: #4EA1FF;
+    box-shadow: 0 0 30px rgba(78, 161, 255, .18);
+}
+
+.download-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.app-description {
+    color: #B8C0CC;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.version-info {
+    margin-bottom: 2rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #4EA1FF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.download-buttons .button {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.download-buttons .button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.learn-more {
+    color: #4EA1FF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s ease;
+    margin-top: auto;
+}
+
+.learn-more:hover {
+    color: #5CAEFF;
+}
+
+/* ===========================
+   Release Notes
+=========================== */
+
+.release-notes {
+    padding: 80px 0;
+    background-color: #0B0D12;
+}
+
+.release-notes h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.release-item {
+    background-color: #181C24;
+    border: 1px solid #2A3443;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.release-item summary {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color .2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.release-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.release-item:hover summary {
+    background-color: #1F2330;
+}
+
+.release-item summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: #4EA1FF;
+    font-weight: 300;
+}
+
+.release-item[open] summary::after {
+    content: "−";
+}
+
+.release-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.app-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+}
+
+.snappress-badge {
+    background-color: #4EA1FF;
+}
+
+.snaprename-badge {
+    background-color: #FF9E4A;
+}
+
+.release-item .version {
+    color: #B8C0CC;
+    font-size: 0.95rem;
+}
+
+.release-item .date {
+    color: #7E8897;
+    font-size: 0.9rem;
+}
+
+.release-content {
+    padding: 0 2rem 2rem;
+    color: #B8C0CC;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.release-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.release-content li {
+    margin-bottom: 0.8rem;
+}
+
+/* ===========================
+   Installation Section
+=========================== */
+
+.installation {
+    padding: 80px 0;
+}
+
+.installation h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.installation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.installation-card {
+    background-color: #181C24;
+    border: 1px solid #2A3443;
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all .25s ease;
+}
+
+.installation-card:hover {
+    transform: translateY(-4px);
+    border-color: #4EA1FF;
+    box-shadow: 0 0 20px rgba(78, 161, 255, .12);
+}
+
+.installation-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.installation-card ol {
+    list-style: decimal;
+    margin-left: 1.5rem;
+    color: #B8C0CC;
+    line-height: 1.8;
+}
+
+.installation-card li {
+    margin-bottom: 0.8rem;
+}
+
+.installation-card code {
+    background-color: #0F1117;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #4EA1FF;
+    font-size: 0.9rem;
+    font-family: 'Courier New', monospace;
+}
+
+.system-req {
+    font-size: 0.9rem;
+    color: #7E8897;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2A3443;
+}
+
+/* ===========================
+   System Requirements
+=========================== */
+
+.system-requirements {
+    padding: 80px 0;
+    background-color: #0B0D12;
+}
+
+.system-requirements h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.requirement-item {
+    background-color: #181C24;
+    border: 1px solid #2A3443;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.requirement-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.requirement-item ul {
+    list-style: none;
+    color: #B8C0CC;
+    line-height: 2;
+}
+
+.requirement-item li {
+    margin-bottom: 1rem;
+}
+
+.requirement-item strong {
+    color: #4EA1FF;
+}
