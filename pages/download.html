@@ -56,7 +56,7 @@
                         <p class="app-description">Compress JPEG and PNG images without sacrificing quality.</p>
                         
                         <div class="version-info">
-                            <span class="badge">v1.12.2</span>
+                            <span class="badge">v1.13.0</span>
                         </div>
 
                         <div class="download-buttons">
@@ -93,7 +93,23 @@
         <section class="release-notes">
             <div class="container">
                 <h2>Release Notes</h2>
-                
+                <details class="release-item">
+                    <summary>
+                        <span class="release-header">
+                            <span class="app-badge snappress-badge">SnapPress</span>
+                            <span class="version">v1.13.0</span>
+                            <span class="date">17 August 2026</span>
+                        </span>
+                    </summary>
+                    <div class="release-content">
+                        <ul>
+                            <li>Added auto-update checker</li>
+                            <li>Added GitHub button that opens the repository</li>
+                            <li>Fixed Python 2 like syntax issues</li>
+                            <li>Fixed error handling for: ERROR04 and ERROR10</li>
+                        </ul>
+                    </div>
+                </details>
                 <details class="release-item">
                     <summary>
                         <span class="release-header">
@@ -104,11 +120,8 @@
                     </summary>
                     <div class="release-content">
                         <ul>
-                            <li>Added WebP format support</li>
-                            <li>Improved EXIF metadata preservation</li>
-                            <li>Enhanced batch processing performance</li>
-                            <li>Fixed GPS data removal in metadata</li>
-                            <li>Dark mode optimizations</li>
+                            <li>Realigned the photo selection drop area next to the settings icon button</li>
+                            <li>Fixed the photo selection frame ignoring fixed width settings</li>
                         </ul>
                     </div>
                 </details>
@@ -123,10 +136,9 @@
                     </summary>
                     <div class="release-content">
                         <ul>
-                            <li>Initial AVIF format support</li>
-                            <li>New compression algorithm</li>
-                            <li>Improved UI/UX</li>
-                            <li>Bug fixes and performance improvements</li>
+                            <li>Support for EXIF metadata for PNG files</li>
+                            <li>Fixed a crash on startup when building the settings icon button</li>
+                            <li>Fixed compressing images wider or taller than 16383px as WebP crashing the whole batch</li>
                         </ul>
                     </div>
                 </details>
