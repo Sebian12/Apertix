@@ -1,0 +1,56 @@
+.demo-hero {
+    padding: 72px 0 48px;
+}
+
+.demo-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+}
+
+main > .container {
+    margin-top: 48px;
+}
+
+#dropzone label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 140px;
+    padding: 2rem;
+    background: var(--surface);
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius);
+    color: var(--muted);
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+#dropzone label:hover {
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+#counter {
+    margin-top: 0.8rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--faint);
+    text-align: right;
+}
+
+#downloadBtn {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.demo-footer {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.demo-footer .version {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--faint);
+}

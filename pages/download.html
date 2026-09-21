@@ -7,6 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/download.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,8 @@
                 <ul>
                     <li><a href="snappress.html">SnapPress</a></li>
                     <li><a href="snaprename.html">SnapRename</a></li>
-                    <li><a href="download.html">Downloads</a></li>
+                    <li><a href="download.html" class="active">Downloads</a></li>
+                    <li><a href="roadmap.html">Roadmap</a></li>
                     <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
                     <li><a href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
@@ -39,6 +41,7 @@
         <!-- Hero Section -->
         <section class="download-hero">
             <div class="container">
+                <span class="eyebrow">APERTIX · GET STARTED</span>
                 <h1>Downloads</h1>
                 <p>Get the latest versions of Apertix applications for your platform.</p>
             </div>
@@ -56,7 +59,7 @@
                         <p class="app-description">Compress JPEG and PNG images without sacrificing quality.</p>
                         
                         <div class="version-info">
-                            <span class="badge">v1.13.0</span>
+                            <span class="badge">v1.13.1</span>
                         </div>
 
                         <div class="download-buttons">
@@ -93,6 +96,21 @@
         <section class="release-notes">
             <div class="container">
                 <h2>Release Notes</h2>
+                <details class="release-item">
+                    <summary>
+                        <span class="release-header">
+                            <span class="app-badge snappress-badge">SnapPress</span>
+                            <span class="version">v1.13.1</span>
+                            <span class="date">26 August 2026</span>
+                        </span>
+                    </summary>
+                    <div class="release-content">
+                        <ul>
+                            <li>Fixed the update_available label staying clickable</li>
+                            <li>Removed unnecessary save_settings() in update_thumbnail_size</li>
+                        </ul>
+                    </div>
+                </details>
                 <details class="release-item">
                     <summary>
                         <span class="release-header">
@@ -178,20 +196,14 @@
                     <!-- Linux -->
                     <article class="installation-card">
                         <h3>Linux</h3>
-                        <ol>
-                            <p>Please consult the README.md file in the GitHub repository for installation on Linux.</p>
-                            <br><br>
-                        </ol>
+                        <p class="install-note">Please consult the README.md for more information.</p>
                         <p class="system-req">Ubuntu 18.04+ or compatible</p>
                     </article>
 
                     <!-- macOS -->
                     <article class="installation-card">
                         <h3>macOS</h3>
-                        <ol>
-                            <p>Please consult the README.md file in the GitHub repository for installation on macOS.</p>
-                            <br><br>
-                        </ol>
+                        <p class="install-note">Please consult the README.md for more information.</p>
                         <p class="system-req">macOS 10.13 or later</p>
                     </article>
                 </div>
