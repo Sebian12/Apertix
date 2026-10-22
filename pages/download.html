@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Downloads</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/download.css">
+    <link rel="stylesheet" href="../styles/output.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,110 +14,100 @@
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/logo.png" alt="Apertix Logo">
-                </a>
-            </div>
-            <nav class="navigation-bar">
-                <ul>
-                    <li><a href="snappress.html">SnapPress</a></li>
-                    <li><a href="snaprename.html">SnapRename</a></li>
-                    <li><a href="download.html" class="active">Downloads</a></li>
-                    <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
-                    <li><a href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
+    <header class="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-md">
+        <div class="wrap flex flex-col items-center gap-1 py-3 lg:h-[84px] lg:flex-row lg:justify-between lg:gap-8 lg:py-0">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Apertix Logo" class="block h-16 w-auto lg:h-[110px]"></a>
+            <nav class="max-w-full overflow-x-auto">
+                <ul class="flex gap-5 whitespace-nowrap text-sm lg:gap-7">
+                    <li><a class="nav-link" href="snappress.html">SnapPress</a></li>
+                    <li><a class="nav-link" href="snaprename.html">SnapRename</a></li>
+                    <li><a class="nav-link active" href="download.html">Downloads</a></li>
+                    <li><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+                    <li><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                    <li><a class="nav-link" href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
+                    <li><a class="nav-link" href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <!-- Hero Section -->
-        <section class="download-hero">
-            <div class="container">
+        <section class="page-hero">
+            <div class="wrap">
                 <span class="eyebrow">APERTIX · GET STARTED</span>
-                <h1>Downloads</h1>
-                <p>Get the latest versions of Apertix applications for your platform.</p>
+                <h1 class="page-title">Downloads</h1>
+                <p class="page-lead">Get the latest versions of Apertix applications for your platform.</p>
             </div>
         </section>
 
-        <!-- Applications Section -->
-        <section class="download-apps">
-            <div class="container">
-                <h2>Available Applications</h2>
-                
-                <div class="download-cards">
-                    <!-- SnapPress -->
-                    <article class="download-card">
-                        <h3>SnapPress</h3>
-                        <p class="app-description">Compress JPEG and PNG images without sacrificing quality.</p>
-                        
-                        <div class="version-info">
-                            <span class="badge">v1.13.1</span>
+        <!-- Applications -->
+        <section class="py-20">
+            <div class="wrap">
+                <h2 class="section-title mb-10">Available Applications</h2>
+
+                <div class="grid gap-5 md:grid-cols-2">
+                    <article class="card flex flex-col p-8">
+                        <h3 class="mb-2 text-[1.7rem] font-bold tracking-tight">SnapPress</h3>
+                        <p class="mb-6 text-muted">Compress JPEG and PNG images without sacrificing quality.</p>
+                        <div class="mb-7"><span class="badge bg-bg">v1.13.1</span></div>
+
+                        <div class="mb-7 flex flex-wrap gap-2.5">
+                            <a class="btn btn-primary min-w-[100px] flex-1 text-center" href="#" id="download-btn">Windows</a>
+                            <a class="btn btn-secondary min-w-[100px] flex-1 text-center" href="#" title="Download for Linux">Linux</a>
+                            <a class="btn btn-secondary min-w-[100px] flex-1 text-center" href="#" title="Download for macOS">macOS</a>
                         </div>
 
-                        <div class="download-buttons">
-                            <a class="button primary" href="#" id="download-btn">Windows</a>
-                            <a href="#" class="button secondary" title="Download for Linux">Linux</a>
-                            <a href="#" class="button secondary" title="Download for macOS">macOS</a>
-                        </div>
-
-                        <a href="snappress.html" class="learn-more">Learn more →</a>
+                        <a href="snappress.html" class="mt-auto text-[0.95rem] font-semibold text-accent underline-offset-4 hover:underline">Learn more →</a>
                     </article>
 
-                    <!-- SnapRename -->
-                    <article class="download-card">
-                        <h3>SnapRename</h3>
-                        <p class="app-description">Rename multiple files at once with ease.</p>
-                        
-                        <div class="version-info">
-                            <span class="badge">Coming Soon</span>
+                    <article class="card flex flex-col p-8">
+                        <h3 class="mb-2 text-[1.7rem] font-bold tracking-tight">SnapRename</h3>
+                        <p class="mb-6 text-muted">Rename multiple files at once with ease.</p>
+                        <div class="mb-7"><span class="badge bg-bg">Coming Soon</span></div>
+
+                        <div class="mb-7 flex flex-wrap gap-2.5">
+                            <a class="btn btn-secondary pointer-events-none min-w-[100px] flex-1 text-center opacity-40" aria-disabled="true" tabindex="-1" href="#">Windows</a>
+                            <a class="btn btn-secondary pointer-events-none min-w-[100px] flex-1 text-center opacity-40" aria-disabled="true" tabindex="-1" href="#">Linux</a>
+                            <a class="btn btn-secondary pointer-events-none min-w-[100px] flex-1 text-center opacity-40" aria-disabled="true" tabindex="-1" href="#">macOS</a>
                         </div>
 
-                        <div class="download-buttons">
-                            <a href="#" class="button secondary" title="Download for Windows" disabled>Windows</a>
-                            <a href="#" class="button secondary" title="Download for Linux" disabled>Linux</a>
-                            <a href="#" class="button secondary" title="Download for macOS" disabled>macOS</a>
-                        </div>
-
-                        <a href="snaprename.html" class="learn-more">Learn more →</a>
+                        <a href="snaprename.html" class="mt-auto text-[0.95rem] font-semibold text-accent underline-offset-4 hover:underline">Learn more →</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Release Notes Section -->
-        <section class="release-notes">
-            <div class="container">
-                <h2>Release Notes</h2>
-                <details class="release-item">
-                    <summary>
-                        <span class="release-header">
-                            <span class="app-badge snappress-badge">SnapPress</span>
-                            <span class="version">v1.13.1</span>
-                            <span class="date">26 August 2026</span>
+        <!-- Release notes -->
+        <section class="border-t border-line py-20">
+            <div class="wrap">
+                <h2 class="section-title mb-10">Release Notes</h2>
+
+                <details class="card disclosure mb-3 overflow-hidden">
+                    <summary class="flex items-center justify-between px-6 py-4">
+                        <span class="flex flex-wrap items-center gap-4">
+                            <span class="app-tag bg-accent">SnapPress</span>
+                            <span class="font-mono text-sm">v1.13.1</span>
+                            <span class="font-mono text-xs text-faint">26 August 2026</span>
                         </span>
                     </summary>
-                    <div class="release-content">
-                        <ul>
+                    <div class="px-6 pt-1 pb-6 text-muted">
+                        <ul class="ml-5 list-disc space-y-2 leading-7">
                             <li>Fixed the update_available label staying clickable</li>
                             <li>Removed unnecessary save_settings() in update_thumbnail_size</li>
                         </ul>
                     </div>
                 </details>
-                <details class="release-item">
-                    <summary>
-                        <span class="release-header">
-                            <span class="app-badge snappress-badge">SnapPress</span>
-                            <span class="version">v1.13.0</span>
-                            <span class="date">17 August 2026</span>
+
+                <details class="card disclosure mb-3 overflow-hidden">
+                    <summary class="flex items-center justify-between px-6 py-4">
+                        <span class="flex flex-wrap items-center gap-4">
+                            <span class="app-tag bg-accent">SnapPress</span>
+                            <span class="font-mono text-sm">v1.13.0</span>
+                            <span class="font-mono text-xs text-faint">17 August 2026</span>
                         </span>
                     </summary>
-                    <div class="release-content">
-                        <ul>
+                    <div class="px-6 pt-1 pb-6 text-muted">
+                        <ul class="ml-5 list-disc space-y-2 leading-7">
                             <li>Added auto-update checker</li>
                             <li>Added GitHub button that opens the repository</li>
                             <li>Fixed Python 2 like syntax issues</li>
@@ -128,32 +115,33 @@
                         </ul>
                     </div>
                 </details>
-                <details class="release-item">
-                    <summary>
-                        <span class="release-header">
-                            <span class="app-badge snappress-badge">SnapPress</span>
-                            <span class="version">v1.12.2</span>
-                            <span class="date">31 July 2026</span>
+
+                <details class="card disclosure mb-3 overflow-hidden">
+                    <summary class="flex items-center justify-between px-6 py-4">
+                        <span class="flex flex-wrap items-center gap-4">
+                            <span class="app-tag bg-accent">SnapPress</span>
+                            <span class="font-mono text-sm">v1.12.2</span>
+                            <span class="font-mono text-xs text-faint">31 July 2026</span>
                         </span>
                     </summary>
-                    <div class="release-content">
-                        <ul>
+                    <div class="px-6 pt-1 pb-6 text-muted">
+                        <ul class="ml-5 list-disc space-y-2 leading-7">
                             <li>Realigned the photo selection drop area next to the settings icon button</li>
                             <li>Fixed the photo selection frame ignoring fixed width settings</li>
                         </ul>
                     </div>
                 </details>
 
-                <details class="release-item">
-                    <summary>
-                        <span class="release-header">
-                            <span class="app-badge snappress-badge">SnapPress</span>
-                            <span class="version">v1.12.1</span>
-                            <span class="date">30 July 2026</span>
+                <details class="card disclosure mb-3 overflow-hidden">
+                    <summary class="flex items-center justify-between px-6 py-4">
+                        <span class="flex flex-wrap items-center gap-4">
+                            <span class="app-tag bg-accent">SnapPress</span>
+                            <span class="font-mono text-sm">v1.12.1</span>
+                            <span class="font-mono text-xs text-faint">30 July 2026</span>
                         </span>
                     </summary>
-                    <div class="release-content">
-                        <ul>
+                    <div class="px-6 pt-1 pb-6 text-muted">
+                        <ul class="ml-5 list-disc space-y-2 leading-7">
                             <li>Support for EXIF metadata for PNG files</li>
                             <li>Fixed a crash on startup when building the settings icon button</li>
                             <li>Fixed compressing images wider or taller than 16383px as WebP crashing the whole batch</li>
@@ -161,117 +149,104 @@
                     </div>
                 </details>
 
-                <details class="release-item">
-                    <summary>
-                        <span class="release-header">
-                            <span class="app-badge snaprename-badge">SnapRename</span>
-                            <span class="version">v0.1.0</span>
-                            <span class="date">Coming Soon</span>
+                <details class="card disclosure mb-3 overflow-hidden">
+                    <summary class="flex items-center justify-between px-6 py-4">
+                        <span class="flex flex-wrap items-center gap-4">
+                            <span class="app-tag bg-[#ff9e4a]">SnapRename</span>
+                            <span class="font-mono text-sm">v0.1.0</span>
+                            <span class="font-mono text-xs text-faint">Coming Soon</span>
                         </span>
                     </summary>
-                    <div class="release-content">
+                    <div class="px-6 pt-1 pb-6 text-muted">
                         <p>Initial release coming soon!</p>
                     </div>
                 </details>
             </div>
         </section>
 
-        <!-- Installation Section -->
-        <section class="installation">
-            <div class="container">
-                <h2>Installation Instructions</h2>
+        <!-- Installation -->
+        <section class="border-t border-line py-20">
+            <div class="wrap">
+                <h2 class="section-title mb-10">Installation Instructions</h2>
 
-                <div class="installation-grid">
-                    <!-- Windows -->
-                    <article class="installation-card">
-                        <h3>Windows</h3>
-                        <ol>
+                <div class="grid gap-5 lg:grid-cols-3">
+                    <article class="card p-7">
+                        <h3 class="mb-5 text-xl font-bold">Windows</h3>
+                        <ol class="ml-5 list-decimal space-y-2.5 leading-7 text-muted">
                             <li>Download the .exe file from above.</li>
                             <li>Run SnapPress.exe</li>
                             <li>Compress your photos.</li>
                         </ol>
-                        <p class="system-req">Windows 10 or later</p>
+                        <p class="mt-6 border-t border-line pt-5 font-mono text-xs text-faint">Windows 10 or later</p>
                     </article>
 
-                    <!-- Linux -->
-                    <article class="installation-card">
-                        <h3>Linux</h3>
-                        <p class="install-note">Please consult the README.md for more information.</p>
-                        <p class="system-req">Ubuntu 18.04+ or compatible</p>
+                    <article class="card p-7">
+                        <h3 class="mb-5 text-xl font-bold">Linux</h3>
+                        <p class="leading-7 text-muted">Please consult the README.md for more information.</p>
+                        <p class="mt-6 border-t border-line pt-5 font-mono text-xs text-faint">Ubuntu 18.04+ or compatible</p>
                     </article>
 
-                    <!-- macOS -->
-                    <article class="installation-card">
-                        <h3>macOS</h3>
-                        <p class="install-note">Please consult the README.md for more information.</p>
-                        <p class="system-req">macOS 10.13 or later</p>
+                    <article class="card p-7">
+                        <h3 class="mb-5 text-xl font-bold">macOS</h3>
+                        <p class="leading-7 text-muted">Please consult the README.md for more information.</p>
+                        <p class="mt-6 border-t border-line pt-5 font-mono text-xs text-faint">macOS 10.13 or later</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- System Requirements -->
-        <section class="system-requirements">
-            <div class="container">
-                <h2>System Requirements</h2>
+        <!-- System requirements -->
+        <section class="border-t border-line py-20">
+            <div class="wrap">
+                <h2 class="section-title mb-10">System Requirements</h2>
 
-                <div class="requirements-grid">
-                    <article class="requirement-item">
-                        <h3>Minimum Requirements</h3>
+                <div class="grid max-w-[800px] gap-5 md:grid-cols-2">
+                    <article class="card p-7">
+                        <h3 class="mb-5 text-xl font-bold">Minimum Requirements</h3>
                         <ul>
-                            <li><strong>CPU:</strong> Any onecore CPU 1GHz+</li>
-                            <li><strong>RAM:</strong> 256 MB</li>
-                            <li><strong>Storage:</strong> 100 MB free space</li>
-                            <li><strong>Display:</strong> at least 1280x720 resolution</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted first:border-0"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">CPU:</strong> Any onecore CPU 1GHz+</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">RAM:</strong> 256 MB</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">Storage:</strong> 100 MB free space</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">Display:</strong> at least 1280x720 resolution</li>
                         </ul>
                     </article>
 
-                    <article class="requirement-item">
-                        <h3>Recommended</h3>
+                    <article class="card p-7">
+                        <h3 class="mb-5 text-xl font-bold">Recommended</h3>
                         <ul>
-                            <li><strong>CPU:</strong> Any multicore CPU</li>
-                            <li><strong>RAM:</strong> 512 MB or more</li>
-                            <li><strong>Storage:</strong> SSD drive</li>
-                            <li><strong>Display:</strong> 1920x1080 or higher</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted first:border-0"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">CPU:</strong> Any multicore CPU</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">RAM:</strong> 512 MB or more</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">Storage:</strong> SSD drive</li>
+                            <li class="border-t border-line py-2.5 text-[0.95rem] text-muted"><strong class="inline-block min-w-[5.5rem] font-mono text-xs uppercase tracking-[0.08em] text-accent">Display:</strong> 1920x1080 or higher</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
 
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="https://github.com/Sebian12" target="_blank">GitHub</a>
-                    <a href="https://ko-fi.com/sebian1221" target="_blank">Support development</a>
-                    <a href="about.html">About</a>
-                </div>
+    <footer class="border-t border-line pt-10 pb-6">
+        <div class="wrap">
+            <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm text-muted">
+                <a class="transition-colors hover:text-ink" href="https://github.com/Sebian12" target="_blank">GitHub</a>
+                <a class="transition-colors hover:text-ink" href="https://ko-fi.com/sebian1221" target="_blank">Support development</a>
+                <a class="transition-colors hover:text-ink" href="about.html">About</a>
             </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Apertix. Open source under the MIT License.</p>
+            <div class="mt-7 border-t border-line pt-5">
+                <p class="font-mono text-xs text-faint">© 2026 Apertix. Open source under the MIT License.</p>
             </div>
-
         </div>
     </footer>
 
-    <div id="download-modal" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" id="close-modal">&times;</button>
-            <h2>Support Apertix</h2>
-            <p>SnapPress is completely free and open source.</p>
-            <p>If it has been useful to you, consider supporting future development.</p>
-
-            <div class="modal-buttons">
-                <a href="https://ko-fi.com/sebian1221" target="_blank" class="button primary">
-                    Support development
-                </a>
-
-                <button id="continue-download" class="button secondary">
-                    Continue to download
-                </button>
+    <div id="download-modal" class="fixed inset-0 z-[1000] hidden items-center justify-center bg-black/70">
+        <div class="relative w-[440px] max-w-[90%] rounded-2xl border border-line-strong bg-surface p-8">
+            <button id="close-modal" class="absolute top-3 right-4 cursor-pointer text-2xl leading-none text-faint transition-colors hover:text-ink">&times;</button>
+            <h2 class="mb-3.5 text-2xl font-bold tracking-tight">Support Apertix</h2>
+            <p class="text-muted">SnapPress is completely free and open source.</p>
+            <p class="mt-2 text-muted">If it has been useful to you, consider supporting future development.</p>
+            <div class="mt-7 flex flex-wrap gap-3">
+                <a href="https://ko-fi.com/sebian1221" target="_blank" class="btn btn-primary">Support development</a>
+                <button id="continue-download" class="btn btn-secondary">Continue to download</button>
             </div>
         </div>
     </div>

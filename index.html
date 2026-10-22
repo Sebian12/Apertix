@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apertix</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/output.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,107 +14,92 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="https://sebian12.github.io/Apertix/"><img src="assets/logo.png" alt="Apertix Logo"></a>
-            </div>
-            <nav class="navigation-bar">
-                <ul>
-                    <li><a href="pages/snappress.html">SnapPress</a></li>
-                    <li><a href="pages/snaprename.html">SnapRename</a></li>
-                    <li><a href="pages/download.html">Downloads</a></li>
-                    <li><a href="pages/roadmap.html">Roadmap</a></li>
-                    <li><a href="pages/FAQ.html">FAQ</a></li>
-                    <li><a href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
-                    <li><a href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
+    <header class="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-md">
+        <div class="wrap flex flex-col items-center gap-1 py-3 lg:h-[84px] lg:flex-row lg:justify-between lg:gap-8 lg:py-0">
+            <a href="https://sebian12.github.io/Apertix/"><img src="assets/logo.png" alt="Apertix Logo" class="block h-16 w-auto lg:h-[110px]"></a>
+            <nav class="max-w-full overflow-x-auto">
+                <ul class="flex gap-5 whitespace-nowrap text-sm lg:gap-7">
+                    <li><a class="nav-link" href="pages/snappress.html">SnapPress</a></li>
+                    <li><a class="nav-link" href="pages/snaprename.html">SnapRename</a></li>
+                    <li><a class="nav-link" href="pages/download.html">Downloads</a></li>
+                    <li><a class="nav-link" href="pages/roadmap.html">Roadmap</a></li>
+                    <li><a class="nav-link" href="pages/FAQ.html">FAQ</a></li>
+                    <li><a class="nav-link" href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
+                    <li><a class="nav-link" href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-description">
+        <section class="py-24">
+            <div class="wrap grid items-center gap-16 lg:grid-cols-[1fr_1.2fr]">
+                <div>
                     <span class="eyebrow">APERTIX · SNAPPRESS</span>
-                    <h1>
-                        <span class="snap">Snap</span>
-                        <span class="press">Press</span>
+                    <h1 class="mb-7 flex flex-col leading-[0.9] tracking-[-0.04em]">
+                        <span class="text-[clamp(3.4rem,7vw,6rem)] font-bold">Snap</span>
+                        <span class="ml-[0.9em] text-[clamp(3rem,6.4vw,5.5rem)] font-light">Press</span>
                     </h1>
-                    <p>Compress images without sacrificing quality.</p>
-                    <p>Fast, lightweight and available on desktop, mobile and web.</p>
-                    <a class="button primary" href="pages/snappress.html">Learn more</a>
-                    <a class="button secondary" id="download-btn" href="#">Download</a>
-                    <p class="version">Current version: v1.13.1</p>
+                    <p class="mb-3 max-w-[460px] text-lg text-muted">Compress images without sacrificing quality.</p>
+                    <p class="mb-3 max-w-[460px] text-lg text-muted">Fast, lightweight and available on desktop, mobile and web.</p>
+                    <div class="mt-5 flex flex-wrap gap-3">
+                        <a class="btn btn-primary" href="pages/snappress.html">Learn more</a>
+                        <a class="btn btn-secondary" id="download-btn" href="#">Download</a>
+                    </div>
+                    <p class="mt-8 font-mono text-xs text-faint">Current version: v1.13.1</p>
                 </div>
 
-                <div class="hero-image">
-                    <img src="assets/SnapPress_app.png" alt="SnapPress app">
-                </div>
+                <img class="shot" src="assets/SnapPress_app.png" alt="SnapPress app">
             </div>
         </section>
 
-        <section class="applications">
-            <div class="container">
-                <span class="section-kicker">ECOSYSTEM</span>
-                <h2>Applications</h2>
-                <p>Explore the Apertix software ecosystem.</p>
+        <section class="border-t border-line py-22">
+            <div class="wrap">
+                <span class="eyebrow !mb-3">ECOSYSTEM</span>
+                <h2 class="section-title mb-3">Applications</h2>
+                <p class="mb-12 text-lg text-muted">Explore the Apertix software ecosystem.</p>
 
-                <div class="cards">
-                    
-                    <article class="card">
-                        <h3>SnapPress</h3>
-                        <p>Compress images without sacrificing quality.</p>
-
-                        <a href="pages/snappress.html" class="button secondary">Learn more</a>
+                <div class="grid gap-5 md:grid-cols-2">
+                    <article class="card flex min-h-60 flex-col p-7">
+                        <span class="mb-8 font-mono text-xs text-accent">01</span>
+                        <h3 class="mb-2 text-[1.7rem] font-bold tracking-tight">SnapPress</h3>
+                        <p class="mb-7 text-muted">Compress images without sacrificing quality.</p>
+                        <a href="pages/snappress.html" class="btn btn-secondary mt-auto self-start">Learn more</a>
                     </article>
 
-                    <article class="card">
-                        <h3>SnapRename</h3>
-                        <p>Rename multiple files at once with ease.</p>
-
-                        <a href="pages/snaprename.html" class="button secondary">Learn more</a>
+                    <article class="card flex min-h-60 flex-col p-7">
+                        <span class="mb-8 font-mono text-xs text-accent">02</span>
+                        <h3 class="mb-2 text-[1.7rem] font-bold tracking-tight">SnapRename</h3>
+                        <p class="mb-7 text-muted">Rename multiple files at once with ease.</p>
+                        <a href="pages/snaprename.html" class="btn btn-secondary mt-auto self-start">Learn more</a>
                     </article>
-
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="https://github.com/Sebian12" target="_blank">GitHub</a>
-                    <a href="https://ko-fi.com/sebian1221" target="_blank">Support development</a>
-                    <a href="pages/about.html">About</a>
-                </div>
+    <footer class="border-t border-line pt-10 pb-6">
+        <div class="wrap">
+            <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm text-muted">
+                <a class="transition-colors hover:text-ink" href="https://github.com/Sebian12" target="_blank">GitHub</a>
+                <a class="transition-colors hover:text-ink" href="https://ko-fi.com/sebian1221" target="_blank">Support development</a>
+                <a class="transition-colors hover:text-ink" href="pages/about.html">About</a>
             </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Apertix. Open source under the MIT License.</p>
+            <div class="mt-7 border-t border-line pt-5">
+                <p class="font-mono text-xs text-faint">© 2026 Apertix. Open source under the MIT License.</p>
             </div>
-
         </div>
     </footer>
 
-    <div id="download-modal" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" id="close-modal">&times;</button>
-            <h2>Support Apertix</h2>
-            <p>SnapPress is completely free and open source.</p>
-            <p>If it has been useful to you, consider supporting future development.</p>
-
-            <div class="modal-buttons">
-                <a href="https://ko-fi.com/sebian1221" target="_blank" class="button primary">
-                    Support development
-                </a>
-
-                <button id="continue-download" class="button secondary">
-                    Continue to download
-                </button>
+    <div id="download-modal" class="fixed inset-0 z-[1000] hidden items-center justify-center bg-black/70">
+        <div class="relative w-[440px] max-w-[90%] rounded-2xl border border-line-strong bg-surface p-8">
+            <button id="close-modal" class="absolute top-3 right-4 cursor-pointer text-2xl leading-none text-faint transition-colors hover:text-ink">&times;</button>
+            <h2 class="mb-3.5 text-2xl font-bold tracking-tight">Support Apertix</h2>
+            <p class="text-muted">SnapPress is completely free and open source.</p>
+            <p class="mt-2 text-muted">If it has been useful to you, consider supporting future development.</p>
+            <div class="mt-7 flex flex-wrap gap-3">
+                <a href="https://ko-fi.com/sebian1221" target="_blank" class="btn btn-primary">Support development</a>
+                <button id="continue-download" class="btn btn-secondary">Continue to download</button>
             </div>
         </div>
     </div>

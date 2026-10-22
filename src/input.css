@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0e1013;
+  --color-surface: #15181d;
+  --color-line: #262b33;
+  --color-line-strong: #363d49;
+  --color-ink: #eceef1;
+  --color-muted: #9aa3af;
+  --color-faint: #6b7480;
+  --color-accent: #4ea1ff;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-bg font-sans leading-relaxed text-ink antialiased; }
+  ::selection { @apply bg-accent text-[#07121f]; }
+  :focus-visible { @apply outline-2 outline-offset-4 outline-accent; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-[min(1120px,92%)]; }
+
+  /* buttons */
+  .btn { @apply inline-block cursor-pointer rounded-[10px] border border-transparent px-[22px] py-3 text-[0.95rem] font-semibold transition-colors; }
+  .btn-primary { @apply bg-accent text-[#07121f] hover:bg-[#7dbbff]; }
+  .btn-secondary { @apply border-line-strong text-ink hover:border-accent hover:text-accent; }
+
+  /* cards, labels */
+  .card { @apply rounded-2xl border border-line bg-surface transition-colors hover:border-line-strong; }
+  .eyebrow { @apply mb-4 inline-flex items-center gap-3 font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent before:h-px before:w-[22px] before:bg-current; }
+  .badge { @apply inline-flex items-center rounded-md border border-line px-2.5 py-1 font-mono text-xs; }
+  .app-tag { @apply rounded-md px-2.5 py-1 text-xs font-bold text-[#07121f]; }
+  .shot { @apply block w-full rounded-xl border border-line-strong shadow-[0_30px_60px_-30px_rgba(0,0,0,0.8)]; }
+
+  /* headings */
+  .page-hero { @apply border-b border-line pt-24 pb-16; }
+  .page-title { @apply text-[clamp(2.8rem,7vw,5rem)] leading-none font-bold tracking-[-0.04em]; }
+  .page-lead { @apply mt-6 max-w-[600px] text-lg leading-relaxed text-muted; }
+  .section-title { @apply text-[clamp(2rem,4.5vw,3rem)] leading-[1.05] font-bold tracking-tight; }
+
+  /* nav */
+  .nav-link { @apply inline-block border-b border-transparent py-1.5 text-muted transition-colors hover:text-ink; }
+  .nav-link.active { @apply border-accent text-ink; }
+
+  /* meta strip */
+  .meta-k { @apply block font-mono text-[0.7rem] font-medium uppercase tracking-[0.12em] text-faint; }
+  .meta-v { @apply mt-2 block text-[1.05rem] font-semibold; }
+
+  /* <details> */
+  .disclosure > summary { @apply cursor-pointer list-none; }
+  .disclosure > summary::-webkit-details-marker { display: none; }
+  .disclosure > summary::after { content: "+"; @apply font-mono font-normal text-accent; }
+  .disclosure[open] > summary::after { content: "−"; }
+  .disclosure[open] { @apply border-line-strong; }
+
+  .faq-content h3 { @apply mt-5 mb-1 border-t border-line pt-5 font-semibold first:mt-0 first:border-0 first:pt-0; }
+  .faq-content p { @apply leading-7 text-muted; }
+
+  /* roadmap */
+  .month { @apply ml-[46px] inline-block rounded-full border border-line bg-bg px-3 py-1.5 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-muted sm:ml-[126px]; }
+  .rm-item { @apply relative mb-5 grid grid-cols-[46px_1fr] gap-4 sm:grid-cols-[86px_1fr] sm:gap-8; }
+  .rm-dot { @apply absolute top-[26px] left-[11px] z-10 size-[15px] rounded-full border-[3px] border-bg bg-faint sm:top-[30px] sm:left-[79px]; }
+  .rm-date { @apply flex flex-col items-center pt-2.5 text-center font-mono; }
+  .rm-date b { @apply text-lg leading-none font-semibold sm:text-2xl; }
+  .rm-date small { @apply mt-1.5 text-[0.62rem] tracking-[0.12em] text-faint; }
+  .rm-card { @apply p-4 sm:p-6; }
+  .rm-top { @apply mb-4 flex items-center justify-between gap-4; }
+  .rm-card h3 { @apply mb-2 text-[clamp(1.3rem,3vw,1.6rem)] leading-tight font-bold tracking-tight; }
+  .rm-card p { @apply max-w-[720px] leading-7 text-muted; }
+  .tags { @apply mt-4 flex flex-wrap gap-2; }
+  .tags span { @apply rounded-full border border-line px-2.5 py-1 text-[0.72rem] text-faint; }
+}

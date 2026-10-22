@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/FAQ.css">
+    <link rel="stylesheet" href="../styles/output.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,40 +14,37 @@
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/logo.png" alt="Apertix Logo">
-                </a>
-            </div>
-            <nav class="navigation-bar">
-                <ul>
-                    <li><a href="snappress.html">SnapPress</a></li>
-                    <li><a href="snaprename.html">SnapRename</a></li>
-                    <li><a href="download.html">Downloads</a></li>
-                    <li><a href="roadmap.html">Roadmap</a></li>
-                    <li><a href="FAQ.html" class="active">FAQ</a></li>
-                    <li><a href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
-                    <li><a href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
+    <header class="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-md">
+        <div class="wrap flex flex-col items-center gap-1 py-3 lg:h-[84px] lg:flex-row lg:justify-between lg:gap-8 lg:py-0">
+            <a href="../index.html"><img src="../assets/logo.png" alt="Apertix Logo" class="block h-16 w-auto lg:h-[110px]"></a>
+            <nav class="max-w-full overflow-x-auto">
+                <ul class="flex gap-5 whitespace-nowrap text-sm lg:gap-7">
+                    <li><a class="nav-link" href="snappress.html">SnapPress</a></li>
+                    <li><a class="nav-link" href="snaprename.html">SnapRename</a></li>
+                    <li><a class="nav-link" href="download.html">Downloads</a></li>
+                    <li><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+                    <li><a class="nav-link active" href="FAQ.html">FAQ</a></li>
+                    <li><a class="nav-link" href="https://ko-fi.com/sebian1221" target="_blank">Ko-fi</a></li>
+                    <li><a class="nav-link" href="https://github.com/Sebian12" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="faq-hero">
-            <div class="container">
+        <section class="page-hero">
+            <div class="wrap">
                 <span class="eyebrow">APERTIX · SUPPORT</span>
-                <h1>FAQ</h1>
-                <p>Answers to common questions about Apertix, SnapPress and SnapRename.</p>
+                <h1 class="page-title">FAQ</h1>
+                <p class="page-lead">Answers to common questions about Apertix, SnapPress and SnapRename.</p>
             </div>
         </section>
 
-        <section class="faq">
-            <div class="faq-list">
-                <details class="faq-section">
-                    <summary>Apertix</summary>
-                    <div class="faq-content">
+        <section class="pt-16 pb-24">
+            <div class="mx-auto flex max-w-[860px] flex-col gap-3.5 px-5">
+                <details class="card disclosure">
+                    <summary class="flex items-center justify-between px-6 py-5 text-xl font-semibold tracking-tight">Apertix</summary>
+                    <div class="faq-content px-6 pb-6">
                         <h3>What is Apertix?</h3>
                         <p>Apertix is an ecosystem of applications designed to simplify photography workflows.</p>
                         <h3>Is Apertix open source?</h3>
@@ -64,9 +58,9 @@
                     </div>
                 </details>
 
-                <details class="faq-section">
-                    <summary>SnapPress</summary>
-                    <div class="faq-content">
+                <details class="card disclosure">
+                    <summary class="flex items-center justify-between px-6 py-5 text-xl font-semibold tracking-tight">SnapPress</summary>
+                    <div class="faq-content px-6 pb-6">
                         <h3>What is SnapPress?</h3>
                         <p>SnapPress compresses images while preserving their visual quality.</p>
                         <h3>Does SnapPress work offline?</h3>
@@ -84,9 +78,9 @@
                     </div>
                 </details>
 
-                <details class="faq-section">
-                    <summary>SnapRename</summary>
-                    <div class="faq-content">
+                <details class="card disclosure">
+                    <summary class="flex items-center justify-between px-6 py-5 text-xl font-semibold tracking-tight">SnapRename</summary>
+                    <div class="faq-content px-6 pb-6">
                         <h3>What is SnapRename?</h3>
                         <p>SnapRename allows you to rename hundreds of files in seconds.</p>
                         <h3>Can I rename multiple files?</h3>
@@ -96,21 +90,17 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
 
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="https://github.com/Sebian12" target="_blank">GitHub</a>
-                    <a href="https://ko-fi.com/sebian1221" target="_blank">Support development</a>
-                    <a href="about.html">About</a>
-                </div>
+    <footer class="border-t border-line pt-10 pb-6">
+        <div class="wrap">
+            <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm text-muted">
+                <a class="transition-colors hover:text-ink" href="https://github.com/Sebian12" target="_blank">GitHub</a>
+                <a class="transition-colors hover:text-ink" href="https://ko-fi.com/sebian1221" target="_blank">Support development</a>
+                <a class="transition-colors hover:text-ink" href="about.html">About</a>
             </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Apertix. Open source under the MIT License.</p>
+            <div class="mt-7 border-t border-line pt-5">
+                <p class="font-mono text-xs text-faint">© 2026 Apertix. Open source under the MIT License.</p>
             </div>
-
         </div>
     </footer>
 </body>
