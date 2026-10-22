@@ -19,21 +19,12 @@ The project serves as a central hub where you can:
 | SnapRename | Windows | C# |
 | SnapRename Android | Android | Kotlin |
 
-## Roadmap
-
-* [ ] Initial website
-* [ ] Responsive layout
-* [ ] Application pages
-* [ ] Download center
-* [ ] SnapPress Web
-* [ ] SnapRename Web
-
 ## Technologies
 
 The website is built using:
 
 * HTML5
-* CSS3
+* Tailwind CSS
 * JavaScript
 
 Hosted with **GitHub Pages**.
