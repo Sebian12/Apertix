@@ -4,11 +4,11 @@
 
 The project serves as a central hub where you can:
 
-* 📦 Download desktop applications
-* 🌐 Access web versions of supported apps
-* 📱 Find mobile releases
-* 📖 Learn about each project
-* 🚀 Follow development progress
+* Download desktop applications
+* Access web versions of supported apps
+* Find mobile releases
+* Learn about each project
+* Follow development progress
 
 ## Apertix ecosystem
 
